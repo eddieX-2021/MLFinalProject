@@ -64,7 +64,7 @@ for col in df.columns:
                 break
 
 if suspicious_cols:
-    print(f"⚠️  WARNING: Found {len(suspicious_cols)} potentially leaky columns:")
+    print(f"WARNING: Found {len(suspicious_cols)} potentially leaky columns:")
     for col in suspicious_cols:
         print(f"  - {col}")
         # calculate correlation with target if numeric
